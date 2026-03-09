@@ -150,9 +150,6 @@ const Index = () => {
     <div className="flex min-h-screen flex-col items-center justify-center bg-background px-4 py-10">
       {/* Header */}
       <div className="mb-8 text-center">
-        <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10">
-          <Sparkles className="h-6 w-6 text-primary" />
-        </div>
         <h1 className="text-3xl font-bold tracking-tight text-foreground md:text-4xl">
           OCD Success Stories
         </h1>
