@@ -207,7 +207,7 @@ const Index = () => {
                 </div>
                 <div className="rounded-2xl bg-card/70 p-4 shadow-sm">
                   <h3 className="mb-1.5 text-xs font-bold uppercase tracking-widest text-primary">
-                    How they managed it
+                    How {story.pronoun} managed it
                   </h3>
                   <p>{story.managed}</p>
                 </div>
