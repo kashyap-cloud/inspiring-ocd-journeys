@@ -7,6 +7,7 @@ interface Story {
   name: string;
   profession: string;
   emoji: string;
+  pronoun: "he" | "she";
   struggled: string;
   managed: string;
   gradient: string;
