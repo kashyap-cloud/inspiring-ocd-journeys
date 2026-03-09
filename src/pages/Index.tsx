@@ -7,6 +7,7 @@ interface Story {
   name: string;
   profession: string;
   emoji: string;
+  pronoun: "he" | "she";
   struggled: string;
   managed: string;
   gradient: string;
@@ -18,6 +19,7 @@ const stories: Story[] = [
     name: "Howie Mandel",
     profession: "Comedian & TV Host",
     emoji: "🎤",
+    pronoun: "he",
     struggled:
       "Severe contamination OCD. He has spoken about an intense fear of germs, avoiding handshakes, and experiencing constant anxiety about illness.",
     managed:
@@ -29,6 +31,7 @@ const stories: Story[] = [
     name: "Lena Dunham",
     profession: "Actress, Writer & Director",
     emoji: "✍️",
+    pronoun: "she",
     struggled:
       "She experienced intrusive thoughts and compulsive rituals from childhood. The thoughts felt distressing and difficult to control.",
     managed:
@@ -40,6 +43,7 @@ const stories: Story[] = [
     name: "David Beckham",
     profession: "Professional Footballer",
     emoji: "⚽",
+    pronoun: "he",
     struggled:
       "Beckham has described a strong need for order and symmetry. If objects were not arranged perfectly, he felt uncomfortable and compelled to fix them.",
     managed:
@@ -51,6 +55,7 @@ const stories: Story[] = [
     name: "Marc Summers",
     profession: "Television Host",
     emoji: "📺",
+    pronoun: "he",
     struggled:
       "Severe contamination OCD that affected both his personal life and career. He avoided physical contact and had intense fears of germs.",
     managed:
@@ -62,6 +67,7 @@ const stories: Story[] = [
     name: "Cameron Diaz",
     profession: "Actress",
     emoji: "🌟",
+    pronoun: "she",
     struggled:
       "She has spoken about obsessive concerns about cleanliness and germs, including frequent hand washing and discomfort touching public surfaces.",
     managed:
@@ -73,6 +79,7 @@ const stories: Story[] = [
     name: "Daniel Radcliffe",
     profession: "Actor",
     emoji: "🎬",
+    pronoun: "he",
     struggled:
       "He experienced OCD in childhood, including repetitive checking and tapping behaviors that he felt compelled to perform.",
     managed:
@@ -84,6 +91,7 @@ const stories: Story[] = [
     name: "Leonardo DiCaprio",
     profession: "Actor",
     emoji: "🎭",
+    pronoun: "he",
     struggled:
       "During childhood he dealt with obsessive thoughts and repetitive behaviors, such as stepping on sidewalk cracks in specific patterns.",
     managed:
@@ -95,6 +103,7 @@ const stories: Story[] = [
     name: "Charlie Puth",
     profession: "Singer & Songwriter",
     emoji: "🎵",
+    pronoun: "he",
     struggled:
       "He has discussed experiencing obsessive thought patterns and anxiety, which sometimes lead to repetitive thinking and overanalysis.",
     managed:
@@ -106,6 +115,7 @@ const stories: Story[] = [
     name: "Hrithik Roshan",
     profession: "Actor",
     emoji: "💪",
+    pronoun: "he",
     struggled:
       "He has spoken about struggles with anxiety and perfectionistic thinking, which can sometimes resemble obsessive tendencies.",
     managed:
@@ -197,7 +207,7 @@ const Index = () => {
                 </div>
                 <div className="rounded-2xl bg-card/70 p-4 shadow-sm">
                   <h3 className="mb-1.5 text-xs font-bold uppercase tracking-widest text-primary">
-                    How they managed it
+                    How {story.pronoun} managed it
                   </h3>
                   <p>{story.managed}</p>
                 </div>
